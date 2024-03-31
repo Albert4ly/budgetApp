@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>budgetApp</title>
+   <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+   <div class="budgCnt">
+      <div class="addingItemsCnt__budgCnt">
+         <h1 class="title__budgCnt">budgetApp</h1>
+         <form action="" class="addItemForm__budgCnt">
+            <button class="selectionOfItemsTypeBtn__budgCnt selectionOfItemsTypeBtn__budgCnt--expenses"></button>
+            <label for="Item"><input type="text" id="Item" class="itemInput__budgCnt" placeholder="description"></label>
+            <label for="itemValue"><input type="number" id="itemValue" class="valueInput__budgCnt"
+                  placeholder="value"></label>
+            <button class="addItemBtn__budgCnt"></button>
+         </form>
+      </div>
+      <div class="itemsListCnt__budgCnt">
+         <p class="totalBudgetInfo__budgCnt">Your Total Budget Is <span>+ 0.00 PLN</span></p>
+         <template class="incomesTemplateCnt__budgCnt">
+            <h2 class="titleOfItemsGroup"><strong>Incomes</strong></h2>
+         </template>
+         <template class="expensesTemplateCnt__budgCnt">
+            <h2 class="titleOfItemsGroup"><strong>Expenses</strong></h2>
+         </template>
+      </div>
+   </div>
+   <script src="js/index.js" type="module"></script>
+</body>
+
+</html>
