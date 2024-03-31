@@ -1,0 +1,71 @@
+:root {
+	/* variables */
+
+	--font-size: 16px;
+
+	--budgCnt-height: 100vh;
+
+	--addingItemsCnt__budgCnt-height: 50vh;
+
+	--title__budgCnt-bg-color: transparent;
+	--title__budgCnt-width: 100%;
+
+	--addItemForm__budgCnt-width: 90%;
+	--addItemForm__budgCnt-marginTop: 10%;
+
+	--labelInputs-width: 90%;
+
+	--itemInput__budgCnt-width: 80%;
+	--itemInput__budgCnt-height: 5vh;
+	--itemInput__budgCnt-marginBottom: 1%;
+	--itemInput__budgCnt-paddingLeft: 2%;
+
+	box-sizing: border-box;
+	font-size: var(--font-size);
+}
+
+.budgCnt {
+	height: var(--budgCnt-height);
+	display: flex;
+	flex-direction: column;
+}
+
+.addingItemsCnt__budgCnt {
+	height: var(--addingItemsCnt__budgCnt-height);
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+}
+
+.title__budgCnt {
+	width: var(--title__budgCnt-width);
+	display: flex;
+	justify-content: center;
+	font-size: 3rem;
+	background-color: var(--title__budgCnt-color);
+}
+
+.addItemForm__budgCnt {
+	width: var(--addItemForm__budgCnt-width);
+	margin-top: var(--addItemForm__budgCnt-marginTop);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+label {
+	width: var(--labelInputs-width);
+	display: contents;
+}
+
+.itemInput__budgCnt,
+.valueInput__budgCnt {
+	background-color: violet;
+	width: var(--itemInput__budgCnt-width);
+	height: var(--itemInput__budgCnt-height);
+	margin-bottom: var(--itemInput__budgCnt-marginBottom);
+	padding-left: var(--itemInput__budgCnt-paddingLeft);
+	border: none;
+	border-bottom: 2px solid gray;
+}
