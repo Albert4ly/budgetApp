@@ -20,6 +20,9 @@
 	--itemInput__budgCnt-marginBottom: 1%;
 	--itemInput__budgCnt-paddingLeft: 2%;
 
+	--selectionOfItemsTypeBtn__budgCnt--width: 9%;
+	--selectionOfItemsTypeBtn__budgCnt--width: 4vh;
+
 	box-sizing: border-box;
 	font-size: var(--font-size);
 }
@@ -68,4 +71,20 @@ label {
 	padding-left: var(--itemInput__budgCnt-paddingLeft);
 	border: none;
 	border-bottom: 2px solid gray;
+}
+
+.itemInput__budgCnt {
+	order: 1;
+}
+
+.valueInput__budgCnt {
+	order: 2;
+}
+
+.selectionOfItemsTypeBtn__budgCnt {
+	order: 3;
+}
+
+.addItemBtn__budgCnt {
+	order: 4;
 }
