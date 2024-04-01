@@ -20,8 +20,9 @@
 	--itemInput__budgCnt-marginBottom: 1%;
 	--itemInput__budgCnt-paddingLeft: 2%;
 
-	--selectionOfItemsTypeBtn__budgCnt--width: 9%;
-	--selectionOfItemsTypeBtn__budgCnt--width: 4vh;
+   --addItemFormBtn-width: 30px;
+	--addItemFormBtn-height: 30px;
+	--addItemFormBtn-margin: .5%;
 
 	box-sizing: border-box;
 	font-size: var(--font-size);
@@ -53,6 +54,16 @@
 	width: var(--addItemForm__budgCnt-width);
 	margin-top: var(--addItemForm__budgCnt-marginTop);
 	display: flex;
+	/* flex-direction: row; */
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.inputsCnt__budgCnt {
+	width: var(--addItemForm__budgCnt-width);
+	margin-top: var(--addItemForm__budgCnt-marginTop);
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
@@ -79,6 +90,13 @@ label {
 
 .valueInput__budgCnt {
 	order: 2;
+}
+
+.selectionOfItemsTypeBtn__budgCnt,
+.addItemBtn__budgCnt {
+	width: var(--addItemFormBtn-width);
+	height: var(--addItemFormBtn-height);
+	margin: var(--addItemFormBtn-margin);
 }
 
 .selectionOfItemsTypeBtn__budgCnt {
