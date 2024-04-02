@@ -5,7 +5,7 @@
 
 	--budgCnt-height: 100vh;
 
-	--addingItemsCnt__budgCnt-height: 50vh;
+	--addingItemsCnt__budgCnt-height: 39vh;
 
 	--title__budgCnt-bg-color: transparent;
 	--title__budgCnt-width: 100%;
@@ -20,9 +20,9 @@
 	--itemInput__budgCnt-marginBottom: 1%;
 	--itemInput__budgCnt-paddingLeft: 2%;
 
-   --addItemFormBtn-width: 30px;
+	--addItemFormBtn-width: 30px;
 	--addItemFormBtn-height: 30px;
-	--addItemFormBtn-margin: .5%;
+	--addItemFormBtn-margin: 0.5%;
 
 	box-sizing: border-box;
 	font-size: var(--font-size);
@@ -32,6 +32,7 @@
 	height: var(--budgCnt-height);
 	display: flex;
 	flex-direction: column;
+	background-color: rgb(144, 140, 140);
 }
 
 .addingItemsCnt__budgCnt {
@@ -40,6 +41,7 @@
 	flex-direction: column;
 	position: relative;
 	align-items: center;
+	background-color: rgb(189, 186, 186);
 }
 
 .title__budgCnt {
@@ -75,7 +77,7 @@ label {
 
 .itemInput__budgCnt,
 .valueInput__budgCnt {
-	background-color: violet;
+	background-color: rgb(233, 229, 233);
 	width: var(--itemInput__budgCnt-width);
 	height: var(--itemInput__budgCnt-height);
 	margin-bottom: var(--itemInput__budgCnt-marginBottom);
@@ -105,4 +107,16 @@ label {
 
 .addItemBtn__budgCnt {
 	order: 4;
+}
+
+.itemsListCnt__budgCnt {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	background-color: rgb(144, 140, 140);
+}
+
+span {
+	color: #008000;
 }
