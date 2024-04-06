@@ -14,21 +14,32 @@
       <div class="addingItemsCnt__budgCnt">
          <h1 class="title__budgCnt">budgetApp</h1>
          <form action="" class="addItemForm__budgCnt">
-            <button class="selectionOfItemsTypeBtn__budgCnt selectionOfItemsTypeBtn__budgCnt--incomes"><i class="icon-plus"></i></button>
+            <button class="selectionOfItemsTypeBtn__budgCnt selectionOfItemsTypeBtn__budgCnt--incomes"><i
+                  class="icon-plus"></i></button>
             <div class="inputsCnt__budgCnt">
-               <label for="Item"><input type="text" id="Item" class="itemInput__budgCnt" placeholder="description"></label>
-               <label for="itemValue"><input type="number" id="itemValue" class="valueInput__budgCnt" placeholder="value"></label>
+               <label for="Item"><input type="text" id="Item" class="itemInput__budgCnt"
+                     placeholder="description"></label>
+               <label for="itemValue"><input type="number" id="itemValue" class="valueInput__budgCnt"
+                     placeholder="value"></label>
             </div>
             <button class="addItemBtn__budgCnt"><i class="icon-ok"></i></button>
          </form>
       </div>
       <div class="itemsListCnt__budgCnt">
          <p class="totalBudgetInfo__budgCnt">Your Total Budget Is <span>+ 0.00 PLN</span></p>
-         <template class="incomesTemplateCnt__budgCnt">
+         <template id="incomesTemplateCnt__budgCnt">
             <h2 class="titleOfItemsGroup"><strong>Incomes</strong></h2>
+            <div class="itemIncomesCnt__budgCnt">
+               <h3 class="itemIncomes__budgCnt"></h3>
+               <div class="itemAmount__budgCnt"></div>
+            </div>
          </template>
          <template class="expensesTemplateCnt__budgCnt">
             <h2 class="titleOfItemsGroup"><strong>Expenses</strong></h2>
+            <div class="itemExpensesCnt__budgCnt">
+               <h3 class="itemExpenses__budgCnt"></h3>
+               <div class="itemAmount__budgCnt"></div>
+            </div>
          </template>
       </div>
    </div>
