@@ -1,6 +1,4 @@
+import { AddItems } from "./addItems.js";
 
-import { AddItems } from "./addItems";
+new AddItems();
 
-const ob = new AddItems();
-
-ob.listenerFunc();
