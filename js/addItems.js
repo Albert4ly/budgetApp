@@ -1,6 +1,8 @@
 const addItemBtn = document.querySelector(".addItemBtn__budgCnt");
 const selectTypeItemBtn = document.querySelector(".selectionOfItemsTypeBtn__budgCnt");
 const itemsListCnt = document.querySelector(".itemsListCnt__budgCnt");
+const itemIncomesCnt = document.querySelector(".titleOfItemsGroupIncomes");
+const itemExpensesCnt = document.querySelector(".titleOfItemsGroupExpenses");
 
 export class AddItems {
    constructor() {
@@ -18,14 +20,19 @@ export class AddItems {
    fillTemplateOfData(e) {
       e.preventDefault();
       const itemInput = document.querySelector(".itemInput__budgCnt");
+      const amountInput = document.querySelector(".valueInput__budgCnt");
 
       if (!selectTypeItemBtn.classList.contains("selectionOfItemsTypeBtn__budgCnt--incomes")) {
          const templateExpenses = document.querySelector("#expensesTemplateCnt__budgCnt");
          const clone2 = templateExpenses.content.cloneNode(true);
 
          const nameItemExpenses = clone2.querySelector(".itemExpenses__budgCnt");
+         const amountItemExpenses = clone2.querySelector(".itemAmount__budgCnt");
          nameItemExpenses.innerText = itemInput.value;
-         itemsListCnt.append(clone2);
+         amountItemExpenses.innerText = amountInput.value;
+
+         itemExpensesCnt.classList.add("titleOfItemsGroupExpense");
+         itemExpensesCnt.append(clone2);
       }
 
       if (selectTypeItemBtn.classList.contains("selectionOfItemsTypeBtn__budgCnt--incomes")) {
@@ -33,8 +40,12 @@ export class AddItems {
          const clone = templateIncomes.content.cloneNode(true);
 
          const nameItemIncomes = clone.querySelector(".itemIncomes__budgCnt");
+         const amountItemIncomes = clone.querySelector(".itemAmount__budgCnt");
          nameItemIncomes.innerText = itemInput.value;
-         itemsListCnt.append(clone);
+         amountItemIncomes.innerText = amountInput.value;
+
+         itemIncomesCnt.classList.add("titleOfItemsGroupIncome");
+         itemIncomesCnt.append(clone);
       }
    }
   
