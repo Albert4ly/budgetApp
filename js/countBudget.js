@@ -7,11 +7,12 @@ export class CountBudget {
 	}
 	
 	listenerFunc() {
-		selectTypeItemBtn.addEventListener('click', (e) => {  this.changeSelectTypeClass(e) });
+		// selectTypeItemBtn.addEventListener('click', (e) => {  this.changeSelectTypeClass(e) });
 		addItemBtn.addEventListener('click', (e) => { this.countAmount(e) });
 	}
 
 	countAmount(e) {
+		e.preventDefault();
 		if (!selectTypeItemBtn.classList.contains("selectionOfItemsTypeBtn__budgCnt--incomes")) {
 			this.subtractionAmount();
 		}
@@ -24,7 +25,7 @@ export class CountBudget {
 		const statusOfWallet = document.querySelector("span");
 		const amountValueInput = document.querySelector(".valueInput__budgCnt");
 
-		let amount = Number(statusOfWallet) + Number(amountValueInput.value);
+		let amount = Number(statusOfWallet.innerText) + Number(amountValueInput.value);
 		statusOfWallet.innerText = amount;
 	}
 
@@ -32,13 +33,13 @@ export class CountBudget {
 		const statusOfWallet = document.querySelector("span");
 		const amountValueInput = document.querySelector(".valueInput__budgCnt");
 
-		let amount = Number(statusOfWallet) - Number(amountValueInput.value);
+		let amount = Number(statusOfWallet.innerText) - Number(amountValueInput.value);
 		statusOfWallet.innerText = amount;
 	}
 
-	changeSelectTypeClass(e) {
-      e.preventDefault();
-      selectTypeItemBtn.classList.toggle("selectionOfItemsTypeBtn__budgCnt--incomes");
-   }
+	// changeSelectTypeClass(e) {
+   //    e.preventDefault();
+   //    selectTypeItemBtn.classList.toggle("selectionOfItemsTypeBtn__budgCnt--incomes");
+   // }
 
 }
