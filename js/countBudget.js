@@ -7,7 +7,6 @@ export class CountBudget {
 	}
 	
 	listenerFunc() {
-		// selectTypeItemBtn.addEventListener('click', (e) => {  this.changeSelectTypeClass(e) });
 		addItemBtn.addEventListener('click', (e) => { this.countAmount(e) });
 	}
 
@@ -36,10 +35,5 @@ export class CountBudget {
 		let amount = Number(statusOfWallet.innerText) - Number(amountValueInput.value);
 		statusOfWallet.innerText = amount;
 	}
-
-	// changeSelectTypeClass(e) {
-   //    e.preventDefault();
-   //    selectTypeItemBtn.classList.toggle("selectionOfItemsTypeBtn__budgCnt--incomes");
-   // }
 
 }
